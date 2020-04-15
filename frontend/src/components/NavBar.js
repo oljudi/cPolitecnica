@@ -34,8 +34,8 @@ function NavBar() {
           >
             <MenuBookTwoTone />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Red Intercultural Politecnica
+          <Typography variant="h4" className={classes.title}>
+            Red Intercultural IPN
           </Typography>
         </Toolbar>
       </AppBar>

@@ -4,7 +4,7 @@ import './index.css';
 import Router from "./Router";
 import MyProvider from "./context";
 import * as serviceWorker from "./serviceWorker";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core";
+import { ThemeProvider, createMuiTheme, CssBaseline } from "@material-ui/core";
 import { BrowserRouter } from "react-router-dom";
 
 const theme = createMuiTheme({
@@ -21,12 +21,16 @@ const theme = createMuiTheme({
       dark: "#002589",
       contrastText: "#FFF",
     },
+    background: {
+      default: "#ff90dc",
+    },
   },
 });
 
 function WhitTheme() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router />
     </ThemeProvider>
   );
